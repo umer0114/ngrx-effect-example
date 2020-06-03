@@ -1,0 +1,9 @@
+<div class="container">
+  <h3>Todo App</h3>
+
+  <p>Loading: {{isLoading | async}}</p>
+
+  <ul>
+    <li *ngFor="let item of todos | async">{{item.text}}</li>
+  </ul>
+</div>
